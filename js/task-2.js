@@ -33,7 +33,7 @@ const allUser = [
   },
 ];
 
-console.log(getUsersWithFriend(allUsers, "Briana Decker"));
+console.log(getUsersWithFriend(allUser, "Briana Decker"));
 // [
 //   {
 //     name: "Sharlene Bush",
