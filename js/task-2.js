@@ -1,7 +1,7 @@
 const getUsersWithFriend = (users, friendName) => {
   return users.filter((user) => user.friends.includes(friendName));
 };
-
+// task-4 te de allUsers nesne dizisi olunca çakışma oldu bueadikinin adını allUser olarak değiştirdim.
 const allUser = [
   {
     name: "Moore Hensley",
