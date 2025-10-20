@@ -1,8 +1,8 @@
 const getUsersWithFriend = (users, friendName) => {
   return users.filter((user) => user.friends.includes(friendName));
 };
-// task-4 te de allUsers nesne dizisi olunca çakışma oldu bueadikinin adını allUser olarak değiştirdim.
-const allUser = [
+
+const allUsers = [
   {
     name: "Moore Hensley",
     friends: ["Sharron Pace"],
@@ -33,7 +33,7 @@ const allUser = [
   },
 ];
 
-console.log(getUsersWithFriend(allUser, "Briana Decker"));
+console.log(getUsersWithFriend(allUsers, "Briana Decker"));
 // [
 //   {
 //     name: "Sharlene Bush",
@@ -45,7 +45,7 @@ console.log(getUsersWithFriend(allUser, "Briana Decker"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUser, "Goldie Gentry"));
+console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
 // [
 //   {
 //     name: "Elma Head",
@@ -57,4 +57,4 @@ console.log(getUsersWithFriend(allUser, "Goldie Gentry"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUser, "Adrian Cross")); // []
+console.log(getUsersWithFriend(allUsers, "Adrian Cross")); // []
